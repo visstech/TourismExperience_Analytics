@@ -415,3 +415,6 @@ def StreamlitApp():
             for attraction_id, est_rating in recommendations:
                 attraction_name = data[data['AttractionId'] == attraction_id]['Attraction'].iloc[0]
                 st.write(f"Attraction: {attraction_name}, Estimated Rating: {est_rating:.2f}")
+
+        if __name__ == "__main__" :           
+            StreamlitApp()
